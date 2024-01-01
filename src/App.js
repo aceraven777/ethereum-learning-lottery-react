@@ -3,12 +3,9 @@ import React from "react";
 import lottery from './lottery';
  
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      manager: '',
-    };
-  }
+  state = {
+    manager: ''
+  };
 
   componentDidMount() {
     this.setManagerName();
